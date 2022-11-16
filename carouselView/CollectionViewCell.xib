@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="reusableCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="carouselView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="576"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="576"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ch-ML-eYU">
+                        <rect key="frame" x="9" y="60.333333333333343" width="340" height="502.33333333333326"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erX-tI-V6i">
+                                <rect key="frame" x="17" y="125.66666666666666" width="306" height="250.99999999999997"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="erX-tI-V6i" firstAttribute="centerX" secondItem="0ch-ML-eYU" secondAttribute="centerX" id="Flu-kJ-RqD"/>
+                            <constraint firstItem="erX-tI-V6i" firstAttribute="centerY" secondItem="0ch-ML-eYU" secondAttribute="centerY" id="Gm0-Zm-YaY"/>
+                            <constraint firstItem="erX-tI-V6i" firstAttribute="width" secondItem="0ch-ML-eYU" secondAttribute="width" multiplier="0.9" id="Ktn-J4-Pl9"/>
+                            <constraint firstItem="erX-tI-V6i" firstAttribute="height" secondItem="0ch-ML-eYU" secondAttribute="height" multiplier="0.5" id="fis-Ay-Bqr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="0ch-ML-eYU" firstAttribute="height" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.95" id="0i2-WI-tix"/>
+                <constraint firstItem="0ch-ML-eYU" firstAttribute="width" secondItem="ZTg-uK-7eu" secondAttribute="width" multiplier="0.95" id="9bN-3X-bRL"/>
+                <constraint firstItem="0ch-ML-eYU" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="fZH-eT-ESn"/>
+                <constraint firstItem="0ch-ML-eYU" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="rRR-Cd-sfY"/>
+            </constraints>
+            <size key="customSize" width="358" height="576"/>
+            <connections>
+                <outlet property="cellView" destination="0ch-ML-eYU" id="48R-Et-j0P"/>
+                <outlet property="numberLabel" destination="erX-tI-V6i" id="ffC-PC-C4m"/>
+            </connections>
+            <point key="canvasLocation" x="372.30769230769232" y="102.3696682464455"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
